@@ -9,7 +9,7 @@ const ErrorPage = () => {
                 <Header />
                 <BreakingNews />
             </div>
-            <h2 className="text-5xl font-semibold text-red-800">The requested page doesn&apos;t exist!</h2>
+            <h2 className="text-5xl font-semibold text-error">The requested page doesn&apos;t exist!</h2>
             <Link to={'/'} className="btn btn-primary text-white text-xl font-semibold">Go Home</Link>
         </div>
     );
