@@ -6,12 +6,12 @@ import { getAuth } from 'firebase/auth'
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBSys_YHz2h1zMnqh5ykwd1p0JoaYjFgLg",
-  authDomain: "react-dragon-newso-auth.firebaseapp.com",
-  projectId: "react-dragon-newso-auth",
-  storageBucket: "react-dragon-newso-auth.appspot.com",
-  messagingSenderId: "47333276146",
-  appId: "1:47333276146:web:3045d0c9838ddeb2cd136b"
+  apiKey: import.meta.env.VITE_APIKEY,
+  authDomain: import.meta.env.VITE_AUTHDOMAIN,
+  projectId: import.meta.env.VITE_PROJECTID,
+  storageBucket: import.meta.env.VITE_STORAGEBUCKET,
+  messagingSenderId: import.meta.env.VITE_MESSAGINGSENDERID,
+  appId: import.meta.env.VITE_APPID,
 };
 
 // Initialize Firebase

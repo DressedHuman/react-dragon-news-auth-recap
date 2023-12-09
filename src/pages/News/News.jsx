@@ -12,8 +12,8 @@ const News = () => {
         <div>
             <Header />
             <Navbar />
-            <div className="grid grid-cols-4">
-                <div className="col-span-3">
+            <div className="grid md:grid-cols-4 gap-6">
+                <div className="md:col-span-3">
                     <h2 className="text-xl font-semibold text-[#403F3F] dark:text-[#BFC0C0]">Dragon News</h2>
 
                     <div className="p-7 border border-[#E7E7E7] dark:border-[#181818]">
@@ -21,7 +21,7 @@ const News = () => {
                         <h3 className="text-[25px] font-bold text-[#403F3F] dark:text-[#BFC0C0] mt-5">{title}</h3>
                         <p className="text-[#706F6F] dark:text-[#8F9090] mt-2">{details}</p>
                         <div>
-                        <Link className="w-2/5 mr-auto mt-8 text-white dark:text-black text-xl font-medium bg-[#D72050] dark:bg-[#28DFAF] px-6 py-2 flex justify-start items-center" to={`/categories/${category_id}`}>
+                        <Link className="w-2/5 mr-auto mt-8 text-white dark:text-black text-xl font-medium bg-[#D72050] dark:bg-[#28DFAF] px-6 py-2 flex justify-start items-center" to={`/category/${category_id}`}>
                             <FaArrowLeftLong className="mr-[5px]" /> All news in this category
                         </Link>
                         </div>
