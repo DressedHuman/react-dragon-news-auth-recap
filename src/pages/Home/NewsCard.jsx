@@ -4,7 +4,7 @@ import { HiOutlineBookmark, HiOutlineShare } from 'react-icons/hi2';
 import { Link } from 'react-router-dom';
 
 const NewsCard = ({ news }) => {
-    const { title, author, details, image_url, rating, total_view } = news;
+    const { _id, title, author, details, image_url } = news;
 
     return (
         <div>
@@ -26,8 +26,11 @@ const NewsCard = ({ news }) => {
                 <h2 className="text-xl font-bold text-[green]">{title}</h2>
                 <img src={image_url} className='mt-5 mb-8' alt={title} />
                 {
-                    details.length>157 ?
-                        <p>{`${details.slice(0,157)}...`}<br /><Link className='font-semibold text-[orange] dark:text-[#005AFF]'>Read More</Link></p>
+                    details.length > 157 ?
+                        <p>{`${details.slice(0, 157)}...`}<br /><Link
+                            className='font-semibold text-[orange] dark:text-[#005AFF]'
+                            to={`/news/${_id}`}
+                            >Read More</Link></p>
                         :
                         <p>{details}</p>
                 }
